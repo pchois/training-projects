@@ -1,0 +1,84 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<HTML>
+   <HEAD>
+      <TITLE>Coding Edumacation</TITLE>
+      <link rel="stylesheet" href="main.css">
+   </HEAD>
+   <BODY>    
+
+      <div> 
+        <button type="button" class="collapsible">FAQ</button>
+          <div class="content">
+            <h3> <strong> Why is this page so ugly? </strong> </h3>
+            <p>I'm doing this for free. </p>
+            <h3> <strong> What is the purpose of this page? </strong> </h3>
+            <p> As a volunteer on the CodeCademy forums,  </p>
+          </div>
+      </div>
+
+      <div> 
+        <button type="button" class="collapsible">Rules</button>
+          <div class="content">
+            <h3> <strong> 1. Reading comprehension </strong> </h3>
+            <p> Read the description of the project thoroughly, everything you need to know is there. </p>
+            <h3> <strong> 2. Be resourceful </strong> </h3>
+            <p> I'm giving you detailed information and lots of hints, the rest is up to you. If you don't know how to do something: </p>
+            <ul>
+                <li>Google it</li>
+                <li>Post a question in the forums</li>
+            </ul>
+            <p> You might think I'm being difficult, but I'm just forcing you to think on your own. </p>
+            <h3> <strong> 3. Keep It Simple Stupid </strong> </h3>
+            <p> The simplest solution is often the best solution. </p>
+          </div>
+      </div>
+
+      <div>
+        <button type="button" class="collapsible">Projects</button>
+          <div class="content">
+            <h3> <strong> significant other match (tinder for netflix, amazon, hulu, etc.) </strong> </h3>
+            <h3> <strong> renting cars </strong> </h3>
+            <h3> <strong> how much money is it now? </strong> </h3>
+            <h3> <strong> expand\refactor SOLO app  </strong> </h3>
+          </div>
+      </div>
+
+      <div> 
+        <button type="button" class="collapsible">Useful Kowledge</button>
+          <div class="content">
+            <p>Some of these things you need to master, others are just useful.  </p>
+            <ul>
+                <li> Git </li>
+                <li> Docker </li>
+                <li> <a href="https://programminghistorian.org/en/lessons/intro-to-bash" target="_blank"> Bash </a> </li>
+                <li> Heroku </li>
+            </ul>
+          </div>
+      </div>
+
+      <div> 
+        <button type="button" class="collapsible">Contact</button>
+          <div class="content">
+            
+          </div>
+      </div>
+
+      <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+        
+        for (i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+              content.style.display = "none";
+            } else {
+              content.style.display = "block";
+            }
+          });
+        }
+        </script>
+
+   </BODY>
+</HTML>
